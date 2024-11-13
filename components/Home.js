@@ -37,7 +37,7 @@ function Home() {
 
   useEffect(() => {
 
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-back-gilt.vercel.app/movies')
     .then(response => response.json())
     .then(data => { 
       const Mervies = data.movies.map (element => ({
